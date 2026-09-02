@@ -35,7 +35,7 @@ Provide a structured, professional markdown review addressing:
 4. Summary & Verdict: State one of: APPROVE, COMMENT, or REQUEST CHANGES.
 """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         contents=prompt,
     )
     return response.text
